@@ -1,0 +1,8 @@
+use `online_examination_system`;
+SELECT
+  email,
+  subject,
+  marks,
+  RANK() OVER (PARTITION BY subject ORDER BY marks DESC) AS subject_rank
+FROM
+  result where email='180238@ku.ac.bd';
