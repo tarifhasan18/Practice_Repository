@@ -1,0 +1,11 @@
+$starttime = "2024-02-14T19:50:55";
+$endtime = "2023-10-09 17:34:01";
+
+// Convert $starttime to desired format
+$formattedStartTime = date('Y-m-d H:i:s', strtotime($starttime));
+
+// Convert $endtime to desired format
+$formattedEndTime = date('Y-m-d H:i:s', strtotime($endtime));
+
+echo $formattedStartTime; // Output: 2024-02-14 19:50:55
+echo $formattedEndTime;   // Output: 2023-10-09 17:34:01
